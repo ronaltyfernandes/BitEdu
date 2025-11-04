@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-between;
+
+  width: calc(100% - 180px);
+  height: 80px;
+
+  background-color: #000;
+  border-radius: 36px;
+
+  padding: 0 40px;
+
+  /* 🔹 Linha interna (borda interna verde) */
+  box-shadow:
+    inset 0 0 0 2px var(--color-primary), /* borda interna sólida */
+    3px 3px 0 0 var(--color-primary);    /* sombra externa sólida, sem blur */
+
+  overflow: hidden;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* linha inferior */
+.texto-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00ff88; /* cor da linha */
+  transition: width 0.3s ease-in-out; /* suavidade */
+}
+
+/* efeito hover */
+.texto-hover:hover::after {
+  width: 100%;
+}
+
+.texto-hover {
+  position: relative;
+  display: inline-block;
+  color: #00ff88; /* cor do texto */
+  text-decoration: none;
+  font-weight: 600;
+}
