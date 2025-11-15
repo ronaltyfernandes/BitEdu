@@ -61,15 +61,15 @@ h2 {
   width: 150%;
   min-height: 80%;               /* usar px ou um valor que não dependa de pai sem altura */
   background: var(--color-primary);
-  transform-origin: left center;   /* escala da esquerda para a direita */
+  transform-origin: left;   /* escala da esquerda para a direita */
   transform: translate(-50%, -50%) rotate(5deg) scaleX(0); /* estado inicial */
-  z-index: -1;                       /* 0 ou 1 — ajuste conforme necessidade */
-  will-change: transform, opacity;
-  animation: faixa-aparecer 1s ease-out forwards;
+  z-index: -1;
+  /* ANIMAÇÃO */
+  animation: revealLine 1.2s ease-out forwards;
 }
 
 /* animação */
-@keyframes faixa-aparecer {
+@keyframes revealLine {
   0% {
     transform: translate(-50%, -50%) rotate(5deg) scaleX(0);
     opacity: 0.6;
