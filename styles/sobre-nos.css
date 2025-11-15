@@ -1,0 +1,106 @@
+h1 {
+  text-align: center;
+  font-size: 8rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 6rem;
+}
+
+.titulo {
+  margin: 120px auto 40px;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--color-bg);
+}
+
+/* Cada container de seção */
+.container {
+  position: relative; /* define o contexto para a linha */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 80px;
+  padding: var(--space-md);
+  gap: var(--space-md);
+  font-size: 2rem;
+  flex-wrap: wrap;
+  z-index: 1; /* conteúdo acima da linha */
+}
+
+
+/* coluna de texto */
+.container > p {
+  flex: 1 1 40%; /* ocupa 40% e se ajusta */
+  max-width: 40%;
+  min-width: 300px;
+  text-align: justify;
+  font-size: 2rem;
+  color: var(--color-bg);
+}
+
+#image-colaboradores {
+  flex: 1 1 40%;
+  max-width: 40%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  margin-right: var(--space-md);
+}
+
+.linha-de-fundo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 150%;
+  min-height: 80%;               /* usar px ou um valor que não dependa de pai sem altura */
+  background: var(--color-primary);
+  transform-origin: left center;   /* escala da esquerda para a direita */
+  transform: translate(-50%, -50%) rotate(5deg) scaleX(0); /* estado inicial */
+  z-index: -1;                       /* 0 ou 1 — ajuste conforme necessidade */
+  will-change: transform, opacity;
+  animation: faixa-aparecer 1s ease-out forwards;
+}
+
+/* animação */
+@keyframes faixa-aparecer {
+  0% {
+    transform: translate(-50%, -50%) rotate(5deg) scaleX(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(5deg) scaleX(1);
+    opacity: 1;
+  }
+}
+
+
+/* Quando a tela for média (tablets) */
+@media (max-width: 1024px) {
+  .linha-de-fundo {
+    width: 180%;
+    min-height: 520px;
+  }
+}
+
+/* Quando a tela for pequena (celulares em paisagem) */
+@media (max-width: 768px) {
+  .linha-de-fundo {
+    width: 200%;
+    min-height: 600px;
+  }
+}
+
+/* Quando a tela for muito pequena (celulares em retrato) */
+@media (max-width: 480px) {
+  .linha-de-fundo {
+    width: 230%;
+    min-height: 700px;
+  }
+}

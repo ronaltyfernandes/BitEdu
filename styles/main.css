@@ -229,6 +229,12 @@ button {
   align-items: center;
 }
 
+.flex-column{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .color-green{
   color: var(--color-primary);
 }
@@ -263,4 +269,12 @@ button {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.item1 {
+  order: 1;
+}
+
+.item2 {
+  order: 2;
 }

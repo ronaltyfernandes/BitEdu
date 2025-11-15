@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/doe.css">
+    <link rel="stylesheet" href="../styles/seja-voluntario.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doe</title>
+    <title>Seja voluntário</title>
   </head>
+
   <body>
     <header>
       <a href="../index.html" class="flex-row sombra-verde rounded-md p-sm botao-sem-linha">
@@ -26,10 +27,10 @@
         <a href="seja-voluntario.html" class="curso-poiter"><button class="font-md">Seja Voluntário</button></a>
       </div>
     </header>
-    
+
     <main  class="full-width center-align">
       <div class="titulo sombra-verde">
-        <h1>Seja Doador</h1>
+        <h1>Seja Voluntário</h1>
       </div>
       <div class="sombra-verde full-width p-lg rounded-md conteudo-central full-height">
         <div class="grey-box full-height">
@@ -47,22 +48,26 @@
   
               <div class="campo">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required maxlength="14"/>
-                <script src="../scripts/mascara-telefone.js"></script>
+                <input type="tel" id="telefone" name="telefone" required maxlength="15" />
+                <script src="../scripts/mascara-Telefone.js"></script>
               </div>
   
               <div class="campo">
-                <label for="valor-doacao">Valor da Doação (R$):</label>
-                <input type="text" id="valor" placeholder="R$ 0,00">
-                <script src="../scripts/mascara-dinheiro.js"></script>
+                <label for="data-de-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-de-nascimento" name="data de nascimento" required />
+              </div>
+
+              <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required maxlength="14"/>
+                <script src="../scripts/mascara-cpf.js"></script>
               </div>
             </div>
 
             <div class="container-submit-text">
               <div class="countainer-botao-doar full-width">
-                <button type="submit" class="botao-doar sombra-verde rounded-md">Doar</button>
+                <button type="submit" class="botao-doar sombra-verde rounded-md">Cadastrar-se</button>
               </div>
-              <p class="text-doe">Sua Doação transforma vidas</p>
             </div>
           </form>
         </div>

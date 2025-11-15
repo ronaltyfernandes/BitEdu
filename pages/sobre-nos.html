@@ -2,85 +2,148 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/sobre-nos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre nós</title>
   </head>
   <body>
     <header>
-      <img src="../images/logoBitEdu.png" alt="">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="sobre-nos.html">Sobre Nós</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
+      <a href="../index.html" class="flex-row sombra-verde rounded-md p-sm botao-sem-linha">
+        <img src="../images/logoBitEdu.png" alt="Logo BitEdu" class="logoImage pl-sm">
+        <p class="logo-text">BitEdu</p>
+      </a>
+      <nav class="color-green">
+        <ul class="flex-row lista-nao-estilizada">
+          <li><a href="../index.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Home</a></li>
+          <li><a href="sobre-nos.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Sobre Nós</a></li>
+          <li><a href="projetos.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Projetos</a></li>
         </ul>
       </nav>
-      <a href="doe.html"><button>Doe</button></a>
-      <a href="seja-valuntario.html"><button>Seja Voluntário</button></a>
+
+      <div>
+        <a href="doe.html" class="curso-poiter"><button class="font-md">Doe</button></a>
+        <a href="seja-voluntario.html" class="curso-poiter"><button class="font-md">Seja Voluntário</button></a>
+      </div>
     </header>
 
     <main>
-      <div class="titulo">
-        <h1>Quem Somos?</h1>
-        <img src="../images/colaboradores.png" alt="quem somos imagem"/>
-        <p>A BitEdu é uma ONG criada por estudantes apaixonados por tecnologia e impacto social. 
-          Nosso propósito é conectar sonhos e oportunidades, tornando o acesso à educação digital 
-          mais justo e acessível.</p>
+      <div class="flex-column">
+        <div class="titulo sombra-verde rounded-lg">
+          <h1>Quem Somos?</h1>
+        </div>
+        <div class="flex-row container">
+          <div class="linha-de-fundo"></div>
+          <img class="sombra-verde" src="../images/colaboradores.png" id="image-colaboradores" alt="quem somos imagem"/>
+          <p>A BitEdu é uma ONG criada por estudantes apaixonados por tecnologia e impacto social. 
+            Nosso propósito é conectar sonhos e oportunidades, tornando o acesso à educação digital 
+            mais justo e acessível.</p>
+        </div>
       </div>
-      <div class="titulo2">
-        <h2>Missão</h2>
-        <img src="../images/Ideias.png" alt="imagem missão"/>
-        <p>Transformar curiosidade em conhecimento e conhecimento em futuro, 
-          usando a tecnologia como meio de inclusão e crescimento.</p>
+
+      <div class="flex-column">
+        <div class="titulo sombra-verde rounded-lg">
+          <h2>Missão</h2>
+        </div>
+        <div class="flex-row container">
+          <div class="linha-de-fundo"></div>
+          <p>Transformar curiosidade em conhecimento e conhecimento em futuro, 
+            usando a tecnologia como meio de inclusão e crescimento.</p>
+          <img src="../images/Ideias.png" id="image-colaboradores" alt="imagem missão" class=""/>
+        </div>
       </div>
-      <div class="titulo2">
-        <h2>Visão</h2>
-        <img src="../images/image-missao.png" alt=""/>
-        <p>Ser referência em educação tecnológica acessível, formando pessoas 
-          preparadas para o mercado digital e para transformar suas comunidades.</p>
+
+      <div class="flex-column">
+        <div class="titulo sombra-verde rounded-lg">
+          <h2>Visão</h2>
+        </div>
+        <div class="flex-row container">
+          <div class="linha-de-fundo"></div>
+          <img src="../images/image-missao.png" id="image-colaboradores" alt="imagem visao"/>
+          <p>Ser referência em educação tecnológica acessível, formando pessoas 
+            preparadas para o mercado digital e para transformar suas comunidades.</p>
+        </div>
       </div>
-      <div class="titulo2">
-        <h2>O que fazemos?</h2>
-        <img src="../images/o-que-fazemos.png" alt="imagem o que fazemos"/>
-        <p>Oferecemos cursos, mentorias e oficinas gratuitas de programação, 
-          robótica e pensamento digital, voltados a comunidades de baixa renda.</p>
+
+      <div class="flex-column">
+        <div class="titulo sombra-verde rounded-lg">
+          <h2>O que fazemos?</h2>
+        </div>
+        <div class="flex-row container">
+          <div class="linha-de-fundo"></div>
+          <p>Oferecemos cursos, mentorias e oficinas gratuitas de programação, 
+            robótica e pensamento digital, voltados a comunidades de baixa renda.</p>
+          <img src="../images/o-que-fazemos.png" id="image-colaboradores" alt="imagem o que fazemos"/>
+        </div>
       </div>
-      <div class="titulo2">
-        <h2>Nossa história</h2>
-        <img src="../images/nossa-historia.png" alt="nossa historia imagem"/>
-        <p>A BitEdu nasceu em 2020, quando um grupo de estudantes decidiu usar a tecnologia para 
-          gerar impacto social. Durante a pandemia, perceberam a falta de acesso à educação digital
-           e criaram cursos gratuitos para mudar essa realidade.
-          O projeto cresceu rapidamente e, com o apoio de voluntários e parceiros, passou a atuar em várias comunidades, 
-          oferecendo cursos, mentorias e oficinas que conectam jovens ao mundo da tecnologia.
-          Hoje, seguimos com o propósito de transformar curiosidade em conhecimento e 
-          conhecimento em futuro, acreditando no poder da educação para mudar vidas.</p>
+
+      <div class="flex-column">
+        <div class="titulo sombra-verde rounded-lg">
+          <h2>Nossa história</h2>
+        </div>
+        <div class="flex-row container">
+          <div class="linha-de-fundo"></div>
+          <img src="../images/nossa-historia.png" alt="nossa historia imagem" id="image-colaboradores"/>
+          <p>A BitEdu nasceu em 2020, quando um grupo de estudantes decidiu usar a tecnologia para 
+            gerar impacto social. Durante a pandemia, perceberam a falta de acesso à educação digital
+             e criaram cursos gratuitos para mudar essa realidade.
+            O projeto cresceu rapidamente e, com o apoio de voluntários e parceiros, passou a atuar em várias comunidades, 
+            oferecendo cursos, mentorias e oficinas que conectam jovens ao mundo da tecnologia.
+            Hoje, seguimos com o propósito de transformar curiosidade em conhecimento e 
+            conhecimento em futuro, acreditando no poder da educação para mudar vidas.</p>
+        </div>
       </div>
     </main>
 
     <footer>
-      <div>
-        <img src="../images/logoBitEdu.png" alt="Logo Bit Edu"/>
-        <p>bitEdu</p>
-      </div>
-      <div>
-        acompanhie-nos nas redes sociais
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Linkedin</a></li>
+      <div class="main-footer">
+        <div class="flex-row space-between">
+          <div class="flex-row">
+            <img src="../images/logoBitEdu.png" alt="Logo Bit Edu" class="logoImage"/>
+            <p class="logo-text">BitEdu</p>
+          </div>
+        <div class="flex-row">
+          <span class="text-white">Acompanhe-nos nas redes sociais:</span>
+          <ul class="social-links sombra-verde rounded-lg">
+            <li>
+              <a href="#" aria-label="Facebook" class="social-icon botao-sem-estilo sem-efeito">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0 1 14 6h2v3h-1.5c-.8 0-1.5.7-1.5 1.5V12H16l-.5 3h-2v7A10 10 0 0 0 22 12z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram" class="social-icon botao-sem-estilo sem-efeito">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.8-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn" class="social-icon botao-sem-estilo sem-efeito">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1 5 2.1 5 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.2V24h-4v-7.7c0-1.8 0-4.2-2.6-4.2s-3 2-3 4v7.9h-4V8z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <ul class="full-width">
+          <li><span class="text-white">Endereço:</span> Rua das mudanças, <p>centro, cidade dos anjos-PB</p></li>
+          <li><span class="text-white">Email:</span>bytecode@fazendoBem.com</li>
+          <li><span class="text-white">Telefone:</span>(83)99999-0000</li>
         </ul>
+        <hr class="full-width"/>
+        <div class="full-width">
+          <p class="text-center">Todos os direitos reservados. Feito com ❤️ para transformar vidas </p>
+          <p class="text-center">© 2025 por 
+            <a href="https://ronaltyfernandes.github.io/portfolio/" target="_blank" class="link-portfolio">
+              <span>Ronalty Fernandes.</span>
+            </a>
+          </p>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>Email:<span>bytecode@fazendoBem.com</span></li>
-          <li>Telefone:<span>(83) 99999-0000</span></li>
-          <li>Endereço:<span>Rua das mudanças, centro, cidade dos anjos-PB</span></li>
-        </ul>
-      </div>
-      <hr/>
-      <p>Todos os direitos reservados. Feito com ❤️ para transformar vidas
-  © 2025 por Ronalty Fernandes. </p>
     </footer>
   </body>
 </html>

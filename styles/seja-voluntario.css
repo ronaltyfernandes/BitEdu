@@ -1,0 +1,104 @@
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+  height: calc(1.2em); 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  padding: var(--space-lg);
+  margin-top: var(--space-sm);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.botao-doar {
+  width: 16rem;
+  height: 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  align-self: start;
+}
+
+.campo {
+  max-width: 600px;
+  min-width: 300px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.conteudo-central {
+  height: 65vh;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 0;
+  text-align: left;
+  z-index: 2;
+  margin-bottom: 40px;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.countainer-botao-doar {
+  width: 1200px;
+  align-self: start;
+}
+
+.container-submit-text {
+  height: 30%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.grid-inputs {
+  margin: 20px auto;
+  display: grid;
+  width: 100%;
+  max-width: 1200px; 
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grey-box{
+  background-color: var(--color-text);
+  border-radius: var(--radius-md);
+  margin: 2rem;
+  width: 98%;
+  height: 95%;
+  margin: auto;
+}
+
+.text-doe {
+  margin-top: auto;
+  align-self: end;
+  font-size: 1.2rem;
+}
+
+.titulo {
+  margin: 120px auto 40px;
+  padding: var(--space-sm);
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  background-color: var(--color-bg);
+}
