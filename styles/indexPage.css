@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .conteudo-central {
   height: 100%;
   width: 100%;
@@ -8,6 +12,9 @@
   padding-left: 0;
   text-align: left;
   z-index: 2;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .fundo-verde-home {
@@ -16,20 +23,18 @@
   left: 0;
   top: 0;
   border-radius: 0 0 36px 0;
-  height: 105%;
+  height: 100%;
   width: 33vw;
-  max-width: 426px;
   z-index: -1;
 }
 
 .subtitulo {
-  font-size: 6rem;
+  font-size: clamp(2rem, 10vw, 6em);
   margin: 0;
-  font-weight: normal;
 }
 
 .titulo {
-  font-size: 15rem;
+  font-size: clamp(5rem, 25vw, 15rem);
   font-weight: bold;
   margin: 0;
   line-height: 0.9;
@@ -47,9 +52,9 @@
 }
 
 .container-texto-home {
-  position: absolute;
-  top: 30%;
-  left: 4%;
+  position: relative;
+  margin-top: 10vh;
+  padding-left: 4%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -71,8 +76,8 @@
 
 .cards > .card {
   flex: 1 1 300px; /* cresce e encolhe, largura base de 300px */
-  min-width: 250px; /* impede que fiquem muito pequenos */
   max-width: 600px; /* impede que fiquem grandes demais */
+  
   height: 328px;
   background-color: var(--color-primary);
   border-radius: var(--radius-md);
@@ -104,4 +109,55 @@
   width: 80%;
   border: 0.5px solid var(--color-bg);
   margin: 1rem auto;
+}
+
+#mundo{
+  display: inline;
+}
+
+#mundo2{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .conteudo-central {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50vw;
+  }
+  .fundo-verde-home {
+    width: 39vw;
+    max-width: 320px;
+  }
+
+  #mundo{
+    display: none;
+  }
+
+  #mundo2{
+    display: inline;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .fundo-verde-home {
+    width: 39vw;
+    max-width: 350px;
+  }
+
+
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .fundo-verde-home {
+    width: 60vw;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .fundo-verde-home {
+    width: 60vw;
+    max-width: 423px;
+  }
 }

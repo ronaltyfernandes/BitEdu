@@ -14,28 +14,48 @@
         <img src="images/logoBitEdu.png" alt="Logo BitEdu" class="logoImage pl-sm">
         <p class="logo-text">BitEdu</p>
       </a>
-      <nav class="color-green">
+
+      <!-- MENU NORMAL (desktop) -->
+      <nav class="color-green menu-desktop">
         <ul class="flex-row lista-nao-estilizada">
-          <li><a href="index.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Home</a></li>
-          <li><a href="pages/sobre-nos.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Sobre Nós</a></li>
-          <li><a href="pages/projetos.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Projetos</a></li>
+          <li><a href="index.html" class="color-green p-sm texto-hover">Home</a></li>
+          <li><a href="pages/sobre-nos.html" class="color-green p-sm texto-hover">Sobre Nós</a></li>
+          <li><a href="pages/projetos.html" class="color-green p-sm texto-hover">Projetos</a></li>
         </ul>
       </nav>
 
-      <div>
+      <div class="menu-desktop">
         <a href="pages/doe.html" class="curso-poiter"><button class="font-md">Doe</button></a>
         <a href="pages/seja-voluntario.html" class="curso-poiter"><button class="font-md">Seja Voluntário</button></a>
       </div>
+
+      <!-- BOTÃO HAMBÚRGUER (mobile) -->
+      <button id="btn-menu" class="hamburguer">
+        ☰
+      </button>
     </header>
+    <!-- MODAL LATERAL mobile-->
+    <div id="menu-mobile" class="menu-mobile">
+      <button id="close-menu" class="close-btn">×</button>
+
+      <ul>
+        <li><a href="index.html" class="botao-sem-estilo">Home</a></li>
+        <li><a href="pages/sobre-nos.html" class="botao-sem-estilo">Sobre Nós</a></li>
+        <li><a href="pages/projetos.html" class="botao-sem-estilo">Projetos</a></li>
+        <li><a href="pages/doe.html" class="botao-sem-estilo">Doe</a></li>
+        <li><a href="pages/seja-voluntario.html" class="botao-sem-estilo">Seja Voluntário</a></li>
+      </ul>
+    </div>
 
     <main>
       <section class="full-height">
         <!-- fundo verde no topo -->
         <div class="conteudo-central full-width">
           <div class="fundo-verde-home"></div>
-          <div class="container-texto-home full-width">
+          <div class="container-texto-home full-width flex-wrap">
             <h1 class="titulo">Bit<span class="color-green">Edu</span></h1>
-            <h2 class="subtitulo">Mudan<span class="color-green">do o mundo</span></h2>
+            <h2 class="subtitulo">Mudan<span class="color-green">do o <span id="mundo">mundo</span></span></h2>
+            <h2 class="subtitulo" id="mundo2">mundo</h2>
             <h2 class="subtitulo">um bit <span class="color-green">.por vez</span></h2>
           </div>
 
@@ -73,12 +93,12 @@
 
     <footer>
       <div class="main-footer">
-        <div class="flex-row space-between">
+        <div class="flex-row space-between flex-wrap">
           <div class="flex-row">
             <img src="../images/logoBitEdu.png" alt="Logo Bit Edu" class="logoImage"/>
             <p class="logo-text">BitEdu</p>
           </div>
-        <div class="flex-row">
+        <div class="flex-row flex-wrap">
           <span class="text-white">Acompanhe-nos nas redes sociais:</span>
           <ul class="social-links sombra-verde rounded-lg">
             <li>
@@ -105,7 +125,7 @@
           </ul>
         </div>
         </div>
-        <ul class="full-width">
+        <ul class="full-width flex-wrap">
           <li><span class="text-white">Endereço:</span> Rua das mudanças, <p>centro, cidade dos anjos-PB</p></li>
           <li><span class="text-white">Email:</span>bytecode@fazendoBem.com</li>
           <li><span class="text-white">Telefone:</span>(83)99999-0000</li>
@@ -122,4 +142,6 @@
       </div>
     </footer>
   </body>
+  <script src="./scripts/abri-fechar-modal.js"></script>
+
 </html>

@@ -28,7 +28,6 @@ input {
 
 .campo {
   max-width: 600px;
-  min-width: 300px;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;

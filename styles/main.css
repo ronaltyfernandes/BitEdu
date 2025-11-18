@@ -45,7 +45,6 @@ html, body, #root {
 body {
   /* 🔹 Faz o corpo ocupar toda a tela */
   overflow-x: hidden;
-  min-height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -277,4 +276,8 @@ button {
 
 .item2 {
   order: 2;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
