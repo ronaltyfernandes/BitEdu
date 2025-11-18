@@ -126,3 +126,14 @@ header {
   display: none;
   visibility: hidden;
 }
+
+ul > li > a {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+  box-shadow: none;
+  text-decoration-line: none;
+}

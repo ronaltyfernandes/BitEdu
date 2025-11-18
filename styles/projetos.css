@@ -3,14 +3,24 @@ h1 {
   font-size: 8rem;
 }
 
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  h1 { font-size: 3rem; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 3rem; }
+}
+
+
+/* ----------- TÍTULO CAIXA ----------- */
 .titulo {
-  margin: 120px auto 40px;
+  margin: 120px auto 20px;
   padding: var(--space-sm);
   border-radius: var(--radius-lg);
   display: flex;
   justify-content: center;
-  align-content: center;
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
   background-color: var(--color-bg);
 }
 
@@ -93,5 +103,31 @@ main > p {
   100% {
     width: 120%;
     opacity: 0.9;
+  }
+}
+
+@media (max-width: 1400px) {
+  .linha-de-fundo{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo { 
+    margin: 60px auto 20px;
+    margin-top: 15vh;
+  }
+  .linha-de-fundo{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo { 
+    margin: 10px auto 20px;
+    margin-top: 15vh;
+  }
+    .linha-de-fundo{
+    display: none;
   }
 }

@@ -13,27 +13,47 @@
         <img src="../images/logoBitEdu.png" alt="Logo BitEdu" class="logoImage pl-sm">
         <p class="logo-text">BitEdu</p>
       </a>
-      <nav class="color-green">
+
+      <!-- MENU NORMAL (desktop) -->
+      <nav class="color-green menu-desktop">
         <ul class="flex-row lista-nao-estilizada">
-          <li><a href="../index.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Home</a></li>
-          <li><a href="sobre-nos.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Sobre Nós</a></li>
-          <li><a href="projetos.html" class="color-green p-sm botao-sem-estilo texto-hover sem-efeito">Projetos</a></li>
+          <li><a href="../index.html" class="color-green p-sm texto-hover">Home</a></li>
+          <li><a href="./sobre-nos.html" class="color-green p-sm texto-hover">Sobre Nós</a></li>
+          <li><a href="./projetos.html" class="color-green p-sm texto-hover">Projetos</a></li>
         </ul>
       </nav>
 
-      <div>
-        <a href="doe.html" class="curso-poiter"><button class="font-md">Doe</button></a>
-        <a href="seja-voluntario.html" class="curso-poiter"><button class="font-md">Seja Voluntário</button></a>
+      <div class="menu-desktop">
+        <a href="./doe.html" class="curso-poiter"><button class="font-md">Doe</button></a>
+        <a href="./seja-voluntario.html" class="curso-poiter"><button class="font-md">Seja Voluntário</button></a>
       </div>
+
+      <!-- BOTÃO HAMBÚRGUER (mobile) -->
+      <button id="btn-menu" class="hamburguer">
+        ☰
+      </button>
     </header>
-    
+    <!-- MODAL LATERAL mobile-->
+    <div id="menu-mobile" class="menu-mobile">
+      <button id="close-menu" class="close-btn">×</button>
+
+      <ul>
+        <li><a href="../index.html" class="botao-sem-estilo">Home</a></li>
+        <li><a href="./sobre-nos.html" class="botao-sem-estilo">Sobre Nós</a></li>
+        <li><a href="./projetos.html" class="botao-sem-estilo">Projetos</a></li>
+        <li><a href="./doe.html" class="botao-sem-estilo">Doe</a></li>
+        <li><a href="./seja-voluntario.html" class="botao-sem-estilo">Seja Voluntário</a></li>
+      </ul>
+    </div>
+    <script src="../scripts/abri-fechar-modal.js"></script>
+
     <main  class="full-width center-align">
       <div class="titulo sombra-verde">
         <h1>Seja Doador</h1>
       </div>
-      <div class="sombra-verde full-width p-lg rounded-md conteudo-central full-height">
-        <div class="grey-box full-height">
-          <form class="full-height container-inputs">
+      <div class="sombra-verde full-width p-lg rounded-md conteudo-central">
+        <div class="grey-box">
+          <form class="container-inputs">
             <div class="grid-inputs">
               <div class="campo">
                 <label for="nome-completo">Nome Completo:</label>
@@ -59,10 +79,10 @@
             </div>
 
             <div class="container-submit-text">
-              <div class="countainer-botao-doar full-width">
+              <div class="countainer-botao-doar full-width flex-wrap">
                 <button type="submit" class="botao-doar sombra-verde rounded-md">Doar</button>
               </div>
-              <p class="text-doe">Sua Doação transforma vidas</p>
+              <p class="text-doe flex-wrap">Sua Doação transforma vidas</p>
             </div>
           </form>
         </div>
@@ -71,12 +91,12 @@
 
     <footer>
       <div class="main-footer">
-        <div class="flex-row space-between">
+        <div class="flex-row space-between flex-wrap">
           <div class="flex-row">
             <img src="../images/logoBitEdu.png" alt="Logo Bit Edu" class="logoImage"/>
             <p class="logo-text">BitEdu</p>
           </div>
-        <div class="flex-row">
+        <div class="flex-row flex-wrap">
           <span class="text-white">Acompanhe-nos nas redes sociais:</span>
           <ul class="social-links sombra-verde rounded-lg">
             <li>
@@ -103,7 +123,7 @@
           </ul>
         </div>
         </div>
-        <ul class="full-width">
+        <ul class="full-width flex-wrap">
           <li><span class="text-white">Endereço:</span> Rua das mudanças, <p>centro, cidade dos anjos-PB</p></li>
           <li><span class="text-white">Email:</span>bytecode@fazendoBem.com</li>
           <li><span class="text-white">Telefone:</span>(83)99999-0000</li>

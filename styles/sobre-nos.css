@@ -1,106 +1,151 @@
+/* -------- TIPOGRAFIA -------- */
 h1 {
   text-align: center;
-  font-size: 8rem;
+  font-size: clamp(2.5rem, 6vw, 8rem);
 }
 
 h2 {
   text-align: center;
-  font-size: 6rem;
+  font-size: clamp(2rem, 5vw, 6rem);
 }
 
+
+/* -------- TÍTULO -------- */
 .titulo {
-  margin: 120px auto 40px;
-  padding: var(--space-lg);
+  margin: 120px auto 20px;
+  padding: var(--space-sm);
   border-radius: var(--radius-lg);
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: fit-content;
+  width: 100%;
+  max-width: 800px;
   background-color: var(--color-bg);
 }
 
-/* Cada container de seção */
+@media (max-width: 768px) {
+  .titulo {
+    margin: 20vh auto 20px;
+  }
+}
+
+
+/* -------- SEÇÃO -------- */
 .container {
-  position: relative; /* define o contexto para a linha */
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 80px;
+  margin: 80px auto;
   padding: var(--space-md);
   gap: var(--space-md);
-  font-size: 2rem;
   flex-wrap: wrap;
-  z-index: 1; /* conteúdo acima da linha */
+  width: 100%;
+  max-width: 1400px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden; /* impede vazamento lateral */
 }
 
 
-/* coluna de texto */
+/* ----- COLUNA DE TEXTO ----- */
 .container > p {
-  flex: 1 1 40%; /* ocupa 40% e se ajusta */
-  max-width: 40%;
-  min-width: 300px;
+  flex: 1 1 450px;
+  max-width: 600px;
   text-align: justify;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
   color: var(--color-bg);
 }
 
+
+/* ----- IMAGEM ----- */
 #image-colaboradores {
-  flex: 1 1 40%;
-  max-width: 40%;
+  flex: 1 1 450px;
+  max-width: 600px;
+  width: 100%;
   height: auto;
   border-radius: var(--radius-lg);
   object-fit: cover;
-  margin-right: var(--space-md);
 }
 
 .linha-de-fundo {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 150%;
-  min-height: 80%;               /* usar px ou um valor que não dependa de pai sem altura */
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
   background: var(--color-primary);
-  transform-origin: left;   /* escala da esquerda para a direita */
-  transform: translate(-50%, -50%) rotate(5deg) scaleX(0); /* estado inicial */
+  transform-origin: left;
+  transform: rotate(5deg) scaleX(0);
   z-index: -1;
-  /* ANIMAÇÃO */
   animation: revealLine 1.2s ease-out forwards;
 }
 
-/* animação */
 @keyframes revealLine {
-  0% {
-    transform: translate(-50%, -50%) rotate(5deg) scaleX(0);
-    opacity: 0.6;
+  from {
+    transform: rotate(5deg) scaleX(0);
+    opacity: 0.5;
   }
-  100% {
-    transform: translate(-50%, -50%) rotate(5deg) scaleX(1);
+  to {
+    transform: rotate(5deg) scaleX(1);
     opacity: 1;
   }
 }
 
 
-/* Quando a tela for média (tablets) */
+/* --------- AJUSTES DE RESPONSIVIDADE --------- */
+
+/* Tablets */
 @media (max-width: 1024px) {
-  .linha-de-fundo {
-    width: 180%;
-    min-height: 520px;
+  .container {
+    margin: 60px auto;
   }
 }
 
-/* Quando a tela for pequena (celulares em paisagem) */
+/* Celulares */
 @media (max-width: 768px) {
-  .linha-de-fundo {
-    width: 200%;
-    min-height: 600px;
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container > p {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  #image-colaboradores {
+    max-width: 100%;
   }
 }
 
-/* Quando a tela for muito pequena (celulares em retrato) */
+/* Telas muito pequenas */
 @media (max-width: 480px) {
-  .linha-de-fundo {
-    width: 230%;
-    min-height: 700px;
+  .container {
+    margin: 40px auto;
+    padding: var(--space-sm);
+  }
+
+  .linha-de-fundo{
+    transform: rotate(2deg) scaleX(0);
+  }
+}
+
+/* Mobile e tablet */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* empilha */
+  }
+
+  .container img {
+    order: 1; /* imagem sempre primeiro */
+  }
+
+  .container p {
+    order: 2; /* texto sempre depois */
+  }
+
+    .linha-de-fundo{
+    transform: rotate(0deg);
   }
 }

@@ -1,16 +1,24 @@
+/* ----------- TÍTULO ----------- */
 h1 {
   font-size: 5rem;
   font-weight: 900;
   margin-bottom: var(--space-sm);
   line-height: 1.2;
-  height: calc(1.2em); 
   text-align: center;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  h1 { font-size: 3rem; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 2.2rem; }
+}
+
+
+/* ----------- INPUTS ----------- */
 input {
   padding: var(--space-lg);
   margin-top: var(--space-sm);
@@ -18,57 +26,55 @@ input {
   border-radius: var(--radius-sm);
 }
 
+
+/* ----------- BOTÃO ----------- */
 .botao-doar {
-  width: 16rem;
+  width: 100%;
+  max-width: 16rem;
   height: 4.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  align-self: start;
 }
 
+
+/* ----------- CAMPOS ----------- */
 .campo {
   max-width: 600px;
-  flex-wrap: wrap;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: fit-content;
 }
 
+/* ----------- CAIXA CENTRAL ----------- */
 .conteudo-central {
-  height: 65vh;
-  max-width: 1500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 0;
-  text-align: left;
-  z-index: 2;
-  margin-bottom: 40px;
+  max-width: 1200px;
+  max-height: 700px;    
+  width: 100%;
+  margin: 0 auto 40px;
+  padding: 2rem;
+  height: 100vw;
 }
 
+
+/* ----------- FORM ----------- */
 .container-inputs {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  gap: 2rem;
 }
 
 .countainer-botao-doar {
-  width: 1200px;
-  align-self: start;
+  width: 100%;
 }
 
 .container-submit-text {
-  height: 30%;
-  max-width: 1200px;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
 }
 
+/* ----------- GRID ----------- */
 .grid-inputs {
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   display: grid;
   width: 100%;
   max-width: 1200px; 
@@ -76,28 +82,61 @@ input {
   gap: 2rem;
 }
 
-.grey-box{
+/* Quando a tela fica pequena vira 1 coluna */
+@media (max-width: 768px) {
+  .grid-inputs {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+
+/* ----------- BOX ESCURA ----------- */
+.grey-box {
   background-color: var(--color-text);
   border-radius: var(--radius-md);
-  margin: 2rem;
-  width: 98%;
-  height: 95%;
-  margin: auto;
+  padding: 2rem;
+  height: 100%;
 }
 
-.text-doe {
-  margin-top: auto;
-  align-self: end;
-  font-size: 1.2rem;
-}
-
+/* ----------- TÍTULO CAIXA ----------- */
 .titulo {
-  margin: 120px auto 40px;
+  margin: 120px auto 20px;
   padding: var(--space-sm);
   border-radius: var(--radius-lg);
   display: flex;
   justify-content: center;
-  align-content: center;
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
   background-color: var(--color-bg);
+}
+
+/* No mobile o título fica menor */
+@media (max-width: 768px) {
+  .titulo { 
+    margin: 60px auto 20px;
+    margin-top: 20vh;
+  }
+  .grey-box{
+    height: auto;
+  }
+  .conteudo-central{
+    margin: 0px auto 0 auto ;
+    height: auto;
+    max-height: none;
+  }
+}
+@media (max-width: 480px) {
+  .titulo { 
+    margin: 60px auto 20px;
+    margin-top: 20vh;
+  }
+  .grey-box{
+    height: auto;
+  }
+  .conteudo-central{
+    margin: 0px auto 0px auto ;
+    height: auto;
+    max-height: none;
+  }
 }
