@@ -13,7 +13,7 @@ Uma aplicação web simples e visualmente agradável, criada para praticar meus 
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./images/readme-assets/Vídeo sem título ‐ Feito com o Clipchamp (1).mp4" alt="Home" width="700"/>
+  <img src="./images/readme-assets/video.mp4" alt="Home" width="700"/>
 </p>
 
 ---
