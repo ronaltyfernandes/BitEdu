@@ -1,4 +1,4 @@
-# 📌 ONG Vida Plena – Página Institucional
+# 📌 ONG Bit Edu – Página Institucional
 
 Uma aplicação web simples e visualmente agradável, criada para praticar meus primeiros passos com design no Figma, transformando o layout em código com HTML, CSS puro e JavaScript.
 
