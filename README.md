@@ -11,10 +11,9 @@ Uma aplicação web simples e visualmente agradável, criada para praticar meus 
 ---
 
 ## 📸 Screenshots
-🏠 Home
 
 <p align="center">
-  <img src="./src//assets/gifPortfolio.gif" alt="Home" width="700"/>
+  <img src="./images/readme-assets/Vídeo sem título ‐ Feito com o Clipchamp (1).mp4" alt="Home" width="700"/>
 </p>
 
 ---
