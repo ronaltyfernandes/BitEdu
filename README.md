@@ -72,7 +72,7 @@ Nenhuma dependência externa é necessária — apenas abra no navegador.
 
 Clone o repositório:
 
-git clone https://github.com/ronaltyfernandes/ong-vida-plena.git
+git clone https://github.com/ronaltyfernandes/BitEdu.git
 
 Abra o arquivo principal: 
 
